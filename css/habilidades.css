@@ -1,0 +1,45 @@
+/* Habilidades */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.habilidad-item {
+    background-color: rgba(17, 34, 64, 0.5);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.habilidad-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(100, 255, 218, 0.2);
+}
+
+.habilidad-item i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.habilidad-item h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.habilidad-item p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+} 

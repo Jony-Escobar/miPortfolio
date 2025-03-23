@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #0a192f;
+    --secondary-color: #64ffda;
+    --accent-color: #112240;
+    --text-primary: #ccd6f6;
+    --text-secondary: #8892b0;
+    --gradient-primary: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+    --gradient-accent: linear-gradient(135deg, #64ffda 0%, #00b4d8 100%);
+    --shadow-primary: 0 4px 20px rgba(100, 255, 218, 0.1);
+    --shadow-hover: 0 8px 30px rgba(100, 255, 218, 0.2);
+}
+
+/*Estilos generales*/
+body {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Secciones */
+.seccion-oscura {
+    background-color: var(--primary-color);
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+}
+
+.seccion-clara {
+    background-color: var(--accent-color);
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.seccion-texto {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+} 

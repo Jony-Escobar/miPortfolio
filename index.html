@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Escobar Jonathan">
+        <meta name="description" content="Portfolio de desarrollo software de Escobar Jonathan">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, NodeJS, Desarrollo Web, Seguridad Web">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titulo -->
+        <title>Escobar Jonathan | Developer</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/xicon" href="img/jonyimg2.jpg">
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand d-none d-sm-block" href="#"><img src="img/jonyimg2.jpg" width="50" alt="Imagen de Jony"></a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#experiencia">Experiencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#educacion">Educación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#certificaciones">Certificaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <!-- Seccion Hero -->
+        <section class="hero align-items-stretch">
+          <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen-desarrollador rounded-circle" src="img/jonyimg2.jpg" alt="Foto de Jony Escobar">
+            <h1>Hola, soy Jony Escobar</h1>
+            <h2>Desarrollador de Software & Analista Funcional</h2>
+            <p class="hero-texto">Especializado en desarrollo web y seguridad de aplicaciones</p>
+            <div class="hero-botones">
+              <a href="#contacto" class="btn btn-outline-light">Contactar</a>
+              <a href="cv-jonathan-escobar.pdf" class="btn btn-outline-light ms-3" target="_blank">Ver CV</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sobre Mi -->
+        <section id="sobre-mi" class="seccion-oscura">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Sobre Mí</h2>
+                <p class="seccion-texto">
+                    Actualmente cursando el segundo año de la Tecnicatura Universitaria en Desarrollo de Software. 
+                    Dirijo EscoWare, mi emprendimiento especializado en reparación de dispositivos electrónicos. 
+                    Me destaco por mi capacidad de trabajo en equipo, proactividad y enfoque en soluciones.
+                </p>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="seccion-clara">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Habilidades Principales</h2>
+                <div class="habilidades-grid">
+                    <div class="habilidad-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Desarrollo Web</h3>
+                        <p>HTML, CSS, JavaScript, Bootstrap, Java</p>
+                    </div>
+                    <div class="habilidad-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Seguridad Web</h3>
+                        <p>Análisis de vulnerabilidades y protección de aplicaciones</p>
+                    </div>
+                    <div class="habilidad-item">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Gestión de Proyectos</h3>
+                        <p>Business Agility, metodologías ágiles y gestión de equipos</p>
+                    </div>
+                    <div class="habilidad-item">
+                        <i class="fas fa-database"></i>
+                        <h3>Base de Datos</h3>
+                        <p>SQL Interactivo y diseño de bases de datos</p>
+                    </div>
+                    <div class="habilidad-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Hardware & Software</h3>
+                        <p>Reparación de dispositivos electrónicos y celulares</p>
+                    </div>
+                    <div class="habilidad-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Soporte Técnico</h3>
+                        <p>Help Desk, mantenimiento y reparación de PC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Destacados -->
+        <section id="proyectos" class="seccion-oscura">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Proyectos Destacados</h2>
+                <div class="proyectos-container">
+                    <button class="proyectos-nav-btn prev-btn" aria-label="Proyectos anteriores">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="proyectos-grid">
+                        <div class="proyecto-item">
+                            <div class="proyecto-imagen">
+                                <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                                <div class="proyecto-overlay">
+                                    <div class="proyecto-enlaces">
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fas fa-external-link-alt"></i> Ver Demo
+                                        </a>
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fab fa-github"></i> Código
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Portfolio Personal</h3>
+                                <p>Diseño y desarrollo de un portfolio personal moderno y responsive utilizando HTML, CSS y JavaScript.</p>
+                                <div class="proyecto-tecnologias">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proyecto-item">
+                            <div class="proyecto-imagen">
+                                <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                                <div class="proyecto-overlay">
+                                    <div class="proyecto-enlaces">
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fas fa-external-link-alt"></i> Ver Demo
+                                        </a>
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fab fa-github"></i> Código
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Sistema de Gestión</h3>
+                                <p>Desarrollo de un sistema de gestión empresarial con funcionalidades de administración y reportes.</p>
+                                <div class="proyecto-tecnologias">
+                                    <span>JavaScript</span>
+                                    <span>Node.js</span>
+                                    <span>SQL</span>
+                                    <span>Express</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proyecto-item">
+                            <div class="proyecto-imagen">
+                                <img src="img/proyecto3.jpg" alt="Proyecto 3">
+                                <div class="proyecto-overlay">
+                                    <div class="proyecto-enlaces">
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fas fa-external-link-alt"></i> Ver Demo
+                                        </a>
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fab fa-github"></i> Código
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Calculadora Avanzada</h3>
+                                <p>Desarrollo de una calculadora web con funciones avanzadas, diseño moderno y soporte para operaciones complejas.</p>
+                                <div class="proyecto-tecnologias">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proyecto-item">
+                            <div class="proyecto-imagen">
+                                <img src="img/proyecto4.jpg" alt="Proyecto 4">
+                                <div class="proyecto-overlay">
+                                    <div class="proyecto-enlaces">
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fas fa-external-link-alt"></i> Ver Demo
+                                        </a>
+                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                            <i class="fab fa-github"></i> Código
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>App de Clima</h3>
+                                <p>Aplicación web para consultar el clima en tiempo real, con integración de API y diseño responsive.</p>
+                                <div class="proyecto-tecnologias">
+                                    <span>JavaScript</span>
+                                    <span>API REST</span>
+                                    <span>CSS</span>
+                                    <span>HTML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="proyectos-nav-btn next-btn" aria-label="Siguientes proyectos">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia -->
+        <section id="experiencia" class="seccion-clara">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Experiencia Profesional</h2>
+                <div class="experiencia-grid">
+                    <div class="experiencia-item">
+                        <h3>Autopista de la Información</h3>
+                        <p class="fecha">2023 - 2024</p>
+                        <p>Help Desk Operator & Técnico electrónico</p>
+                        <ul class="experiencia-lista">
+                            <li>Soporte técnico de primer nivel</li>
+                            <li>Mantenimiento de equipos electrónicos</li>
+                            <li>Atención al cliente</li>
+                        </ul>
+                    </div>
+                    <div class="experiencia-item">
+                        <h3>EscoWare</h3>
+                        <p class="fecha">2020 - Presente</p>
+                        <p>Emprendedor - Servicio técnico especializado</p>
+                        <ul class="experiencia-lista">
+                            <li>Reparación de dispositivos electrónicos</li>
+                            <li>Gestión de negocio propio</li>
+                            <li>Atención al cliente y ventas</li>
+                        </ul>
+                    </div>
+                    <div class="experiencia-item">
+                        <h3>Laboratorio de las Sierras S. A.</h3>
+                        <p class="fecha">2015 - 2016</p>
+                        <p>Operario</p>
+                        <ul class="experiencia-lista">
+                            <li>Operación de maquinaria</li>
+                            <li>Control de calidad</li>
+                            <li>Trabajo en equipo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section id="educacion" class="seccion-oscura">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Educación</h2>
+                <div class="educacion-grid">
+                    <div class="educacion-item">
+                        <h3>Universidad de la Punta</h3>
+                        <p class="fecha">2023 - 2026</p>
+                        <p>Tecnicatura en Desarrollo de Software</p>
+                    </div>
+                    <div class="educacion-item">
+                        <h3>Bonimac University</h3>
+                        <p class="fecha">2020</p>
+                        <p>Experto en Software y Hardware de Celulares</p>
+                    </div>
+                    <div class="educacion-item">
+                        <h3>Instituto Loopian</h3>
+                        <p class="fecha">2014</p>
+                        <p>Armado y Reparación de PC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificaciones -->
+        <section id="certificaciones" class="seccion-clara">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Certificaciones y Cursos</h2>
+                <div class="certificaciones-grid">
+                    <div class="certificacion-item">
+                        <div class="certificacion-icono">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Seguridad Web</h3>
+                        <p class="fecha">2024</p>
+                        <p>Fundamentos de Ciberseguridad y Protección de Aplicaciones Web</p>
+                        <a href="#" class="btn btn-outline-dark">Ver Certificado</a>
+                    </div>
+                    <div class="certificacion-item">
+                        <div class="certificacion-icono">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p class="fecha">2023</p>
+                        <p>Desarrollo Frontend con HTML, CSS y JavaScript</p>
+                        <a href="#" class="btn btn-outline-dark">Ver Certificado</a>
+                    </div>
+                    <div class="certificacion-item">
+                        <div class="certificacion-icono">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Base de Datos</h3>
+                        <p class="fecha">2023</p>
+                        <p>SQL y Diseño de Bases de Datos Relacionales</p>
+                        <a href="#" class="btn btn-outline-dark">Ver Certificado</a>
+                    </div>
+                    <div class="certificacion-item">
+                        <div class="certificacion-icono">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Desarrollo Móvil</h3>
+                        <p class="fecha">2023</p>
+                        <p>Desarrollo de Aplicaciones Móviles con React Native</p>
+                        <a href="#" class="btn btn-outline-dark">Ver Certificado</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="seccion-clara">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Contacto</h2>
+                <div class="redes-sociales">
+                    <a href="mailto:jony.escobar14@gmail.com" class="btn btn-outline-light">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/jony-escobar" target="_blank" class="btn btn-outline-light">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Jony-Escobar" target="_blank" class="btn btn-outline-light">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="contenedor">
+                <p>&copy; 2025 Jonathan Escobar - Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+        <!-- JS Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JS Proyectos -->
+        <script src="js/proyectos.js"></script>
+    </body>
+</html>

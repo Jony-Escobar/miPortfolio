@@ -1,0 +1,154 @@
+/* Proyectos Destacados */
+.proyectos-container {
+    position: relative;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+.proyectos-grid {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.proyecto-item {
+    flex: 0 0 350px;
+    background-color: rgba(17, 34, 64, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.proyectos-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(17, 34, 64, 0.8);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.proyectos-nav-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.proyecto-imagen {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-item:hover .proyecto-imagen img {
+    transform: scale(1.05);
+}
+
+.proyecto-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 25, 47, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.proyecto-item:hover .proyecto-overlay {
+    opacity: 1;
+}
+
+.proyecto-enlaces {
+    display: flex;
+    gap: 1rem;
+}
+
+.proyecto-enlaces .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.proyecto-info {
+    padding: 1.5rem;
+}
+
+.proyecto-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.proyecto-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.proyecto-tecnologias span {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--secondary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .proyectos-container {
+        padding: 0 2rem;
+    }
+
+    .proyectos-nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .proyecto-item {
+        flex: 0 0 300px;
+    }
+
+    .proyecto-enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto-enlaces .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+} 
