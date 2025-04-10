@@ -1,0 +1,95 @@
+/* Estilos de botones unificados */
+.btn-outline-light {
+    color: #ffffff;
+    border: 1px solid var(--secondary-color);
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(10, 25, 47, 0.5);
+    font-weight: normal;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.btn-outline-light i {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.btn-outline-light:hover i {
+    color: var(--primary-color);
+}
+
+/* Ajustes específicos para botones en distintas secciones */
+.hero-botones .btn-outline-light {
+    min-width: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-botones .btn-outline-light i {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.redes-sociales .btn-outline-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+/* Estilos para los botones de certificaciones */
+.btn-outline-dark {
+    background-color: rgba(10, 25, 47, 0.5);
+    border: 1px solid var(--secondary-color);
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+
+.certificacion-item .btn-outline-dark {
+    display: inline-block;
+    min-width: 150px;
+    margin-top: 0.5rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .btn-outline-light {
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .hero-botones .btn-outline-light,
+    .redes-sociales .btn-outline-light {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .hero-botones .btn-outline-light i {
+        font-size: 1rem;
+    }
+} 

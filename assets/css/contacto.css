@@ -1,0 +1,25 @@
+/* Contacto */
+.redes-sociales {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Los estilos de botones ahora están en buttons.css */
+
+/* Footer */
+.footer {
+    background-color: var(--accent-color);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+    }
+} 

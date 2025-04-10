@@ -7,16 +7,20 @@
 }
 
 .certificacion-item {
-    background-color: var(--bg-primary);
+    background-color: var(--primary-color);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    transition: all 0.3s ease;
 }
 
 .certificacion-item:hover {
     transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(100, 255, 218, 0.2);
 }
 
 .certificacion-icono {
@@ -32,7 +36,7 @@
 
 .certificacion-icono i {
     font-size: 2rem;
-    color: var(--bg-primary);
+    color: var(--primary-color);
 }
 
 .certificacion-item h3 {
@@ -53,19 +57,7 @@
     line-height: 1.6;
 }
 
-.certificacion-item .btn {
-    background-color: transparent;
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
-    padding: 0.5rem 1.5rem;
-    border-radius: 2rem;
-    transition: all 0.3s ease;
-}
-
-.certificacion-item .btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--bg-primary);
-}
+/* Los estilos de botones ahora están en buttons.css */
 
 @media screen and (max-width: 768px) {
     .certificaciones-grid {

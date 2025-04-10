@@ -1,0 +1,199 @@
+/* Experiencia */
+.experiencia-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    min-height: 300px;
+}
+
+/* Línea de tiempo (camino) */
+.experiencia-timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: var(--secondary-color);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    z-index: 1;
+}
+
+/* Elementos de la experiencia */
+.experiencia-item {
+    position: relative;
+    background-color: rgba(17, 34, 64, 0.5);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 30px;
+    width: 45%;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.experiencia-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(100, 255, 218, 0.2);
+}
+
+.experiencia-item:nth-child(odd) {
+    margin-right: auto;
+    text-align: right;
+}
+
+.experiencia-item:nth-child(even) {
+    margin-left: auto;
+    text-align: left;
+}
+
+/* Círculos en la línea de tiempo */
+.experiencia-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
+    border-radius: 50%;
+    top: 28px;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.7);
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.experiencia-item:hover::before {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.9);
+    transform: scale(1.1);
+}
+
+.experiencia-item:nth-child(odd)::before {
+    right: -60px;
+}
+
+.experiencia-item:nth-child(even)::before {
+    left: -60px;
+}
+
+/* Líneas conectoras */
+.experiencia-item::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    top: 36px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.experiencia-item:hover::after {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.6);
+    width: 45px;
+}
+
+.experiencia-item:nth-child(odd)::after {
+    right: -40px;
+}
+
+.experiencia-item:nth-child(even)::after {
+    left: -40px;
+}
+
+/* Estilos para h3, fecha y lista */
+.experiencia-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.experiencia-item .fecha {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.experiencia-lista {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.experiencia-lista li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.experiencia-item:nth-child(odd) .experiencia-lista li {
+    padding-right: 1.5rem;
+}
+
+.experiencia-item:nth-child(even) .experiencia-lista li {
+    padding-left: 1.5rem;
+}
+
+.experiencia-lista li::before {
+    content: '•';
+    color: var(--secondary-color);
+    position: absolute;
+}
+
+.experiencia-item:nth-child(odd) .experiencia-lista li::before {
+    right: 0;
+}
+
+.experiencia-item:nth-child(even) .experiencia-lista li::before {
+    left: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .experiencia-timeline::before {
+        left: 30px;
+    }
+    
+    .experiencia-timeline::after {
+        left: 30px;
+        transform: none;
+    }
+    
+    .experiencia-item {
+        width: 80%;
+        margin-left: 70px !important;
+        margin-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .experiencia-item::before {
+        left: -40px !important;
+        right: auto !important;
+    }
+    
+    .experiencia-item::after {
+        left: -39px !important;
+        right: auto !important;
+        width: 39px !important;
+    }
+    
+    .experiencia-item:hover::after {
+        width: 44px !important;
+    }
+    
+    .experiencia-item:nth-child(odd) .experiencia-lista li,
+    .experiencia-item:nth-child(even) .experiencia-lista li {
+        padding-left: 1.5rem;
+        padding-right: 0;
+    }
+    
+    .experiencia-item:nth-child(odd) .experiencia-lista li::before,
+    .experiencia-item:nth-child(even) .experiencia-lista li::before {
+        left: 0;
+        right: auto;
+    }
+}

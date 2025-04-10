@@ -24,7 +24,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
+    padding: 5rem 2rem 4rem 2rem;
+    overflow: visible;
 }
 
 h1 {
@@ -72,6 +73,30 @@ h2 {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* Estilo específico para la sección Sobre Mí */
+#sobre-mi .seccion-texto {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+#sobre-mi .seccion-texto strong {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+#sobre-mi .seccion-texto em {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+#sobre-mi .seccion-texto br {
+    margin-bottom: 0.5rem;
+    display: block;
+    content: "";
 }
 
 /* Responsive */
@@ -82,5 +107,15 @@ h2 {
     
     h2 {
         font-size: 1.2rem;
+    }
+    
+    .seccion-texto {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    #sobre-mi .seccion-texto {
+        font-size: 1.05rem;
+        line-height: 1.7;
     }
 } 
