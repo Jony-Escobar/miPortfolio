@@ -31,6 +31,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Manejar el modal de video
+    const videoModal = document.getElementById('videoModal');
+    const videoFrame = document.getElementById('videoFrame');
+    
+    // Si existe el modal, configurar su funcionalidad
+    if (videoModal && videoFrame) {
+        // Cuando se abre el modal, cargar el video correspondiente
+        videoModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const videoSrc = button.getAttribute('data-video');
+            videoFrame.src = videoSrc;
+        });
+        
+        // Cuando se cierra el modal, parar el video
+        videoModal.addEventListener('hidden.bs.modal', function () {
+            videoFrame.src = '';
+        });
+    }
+
     // Configurar la navegación del sitio - siempre ejecutar esta parte
     const navbar = document.querySelector('.navbar');
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');

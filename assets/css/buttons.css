@@ -95,3 +95,31 @@
         font-size: 1rem;
     }
 } 
+
+/* Estilos para el modal de video */
+.modal-content {
+    background-color: var(--accent-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.modal-header .btn-close {
+    color: var(--text-primary);
+    filter: invert(1) brightness(1.5);
+}
+
+.modal-title {
+    color: var(--secondary-color);
+}
+
+#videoModal .modal-body {
+    padding: 0;
+}
+
+#videoModal .ratio {
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+} 

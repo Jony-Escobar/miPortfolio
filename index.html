@@ -133,7 +133,7 @@
                                 <img src="assets/img/proyectos/agendaMédica.png" alt="Proyecto 1">
                                 <div class="proyecto-overlay">
                                     <div class="proyecto-enlaces">
-                                        <a href="https://www.linkedin.com/posts/jony-escobar_hola-red-hace-mucho-que-no-paso-por-ac%C3%A1-activity-7303925984771162112-vvBw?utm_source=share&utm_medium=member_desktop&rcm=ACoAADEzqNUBRJEa4irqWzHpW98huG8CShUpJZc" target="_blank" class="btn btn-outline-light">
+                                        <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/mxeOGbFtKmE">
                                             <i class="fas fa-external-link-alt"></i> Ver Demo
                                         </a>
                                         <a href="https://github.com/Jony-Escobar/ProyectoIntegradorLab2" target="_blank" class="btn btn-outline-light">
@@ -162,7 +162,7 @@
                                 <img src="assets/img/proyectos/fakeStoreApi.png" alt="Proyecto 2">
                                 <div class="proyecto-overlay">
                                     <div class="proyecto-enlaces">
-                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                        <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/YJhA3brt0DI">
                                             <i class="fas fa-external-link-alt"></i> Ver Demo
                                         </a>
                                         <a href="https://github.com/Jony-Escobar/E-commerce-ULP-JonyEscobar" target="_blank" class="btn btn-outline-light">
@@ -188,9 +188,9 @@
                                 <img src="assets/img/proyectos/proyectoJava.png" alt="Proyecto 3">
                                 <div class="proyecto-overlay">
                                     <div class="proyecto-enlaces">
-                                        <a href="#" target="_blank" class="btn btn-outline-light">
+                                        <!-- <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="">
                                             <i class="fas fa-external-link-alt"></i> Ver Demo
-                                        </a>
+                                        </a> -->
                                         <a href="https://github.com/Jony-Escobar/Trabajo-Final" target="_blank" class="btn btn-outline-light">
                                             <i class="fab fa-github"></i> Código
                                         </a>
@@ -206,30 +206,6 @@
                                     <span>MySQL</span>
                                     <span>JDBC</span>
                                     <span>NetBeans</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="proyecto-item">
-                            <div class="proyecto-imagen">
-                                <img src="assets/img/proyectos/desafioWeb.png" alt="Proyecto 4">
-                                <div class="proyecto-overlay">
-                                    <div class="proyecto-enlaces">
-                                        <a href="https://jony-escobar.github.io/TrabajoIntegradorWebl/" target="_blank" class="btn btn-outline-light">
-                                            <i class="fas fa-external-link-alt"></i> Ver Demo
-                                        </a>
-                                        <a href="https://github.com/Jony-Escobar/TrabajoIntegradorWebl" target="_blank" class="btn btn-outline-light">
-                                            <i class="fab fa-github"></i> Código
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="proyecto-info">
-                                <h3>Desafío de Examen</h3>
-                                <p>Desarrollé un sitio web como trabajo integrador individual para la ULP, en un examen con un plazo máximo de 2 horas, aplicando HTML5, CSS3 y JavaScript puro, sin frameworks.</p>
-                                <div class="proyecto-tecnologias">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
                                 </div>
                             </div>
                         </div>
@@ -363,6 +339,23 @@
                 <p>&copy; 2025 Jony Escobar - Todos los derechos reservados</p>
             </div>
         </footer>
+
+        <!-- Modal para Videos -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">Demo del Proyecto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="videoFrame" src="" title="Video demostrativo" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- JS Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
