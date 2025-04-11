@@ -87,6 +87,8 @@
         width: 100%;
         max-width: 250px;
         justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .hero-botones .btn-outline-light i {
