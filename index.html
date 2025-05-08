@@ -1,365 +1,446 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- Metadatos -->
-        <meta charset="UTF-8">
-        <meta name="author" content="Escobar Jonathan">
-        <meta name="description" content="Portfolio de desarrollo software de Escobar Jonathan">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, NodeJS, Desarrollo Web">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Titulo -->
-        <title>Escobar Jonathan | Developer</title>
-        <!-- Favicon -->
-        <link rel="icon" type="image/xicon" href="assets/img/perfil/jonyimg2.jpg">
-        <!-- CSS Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <!-- CSS propio -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-    </head>
-    <body>
-        <!-- Barra de navegacion -->
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Escobar Jonathan" />
+    <meta name="description" content="Portfolio de desarrollo software de Escobar Jonathan" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, NodeJS, Desarrollo Web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo -->
+    <title>Escobar Jonathan | Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/xicon" href="assets/img/perfil/jonyimg2.jpg" />
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand d-none d-sm-block active" aria-current="page" href="#inicio"><img src="assets/img/perfil/jonyimg2.jpg" width="50" alt="Imagen de Jony"></a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand d-none d-sm-block active" aria-current="page" href="#inicio"><img
+                        src="assets/img/perfil/jonyimg2.jpg" width="50" alt="Imagen de Jony" /></a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#proyectos">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#experiencia">Experiencia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#educacion">Educación</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#certificaciones">Certificaciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificaciones">Certificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-        </nav>
-
-        <!-- Seccion Hero -->
-        <section id="inicio" class="hero align-items-stretch">
-          <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-            <img class="hero-imagen-desarrollador" src="assets/img/perfil/jonyimg2.jpg" alt="Foto de Jony Escobar">
-            <h1>Hola, soy Jony Escobar</h1>
-            <h2>Desarrollador de Software & Analista Funcional</h2>
-            <p class="hero-texto">Experiencia en el desarrollo de aplicaciones web y de escritorio.</p>
-            <div class="hero-botones">
-              <a href="#contacto" class="btn btn-outline-light"><i class="fas fa-paper-plane"></i> Contactar</a>
-              <a href="assets/cv/CV-EscobarJonathanNicolas.pdf" class="btn btn-outline-light" download><i class="fas fa-file-alt"></i> Descargar CV</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Sobre Mi -->
-        <section id="sobre-mi" class="seccion-oscura">
-            <div class="contenedor">
-                <h2 class="seccion-titulo">Sobre Mí</h2>
-                <p class="seccion-texto">
-                    Soy estudiante del último año en la <strong>Tecnicatura Universitaria en Desarrollo de Software</strong>, con una gran pasión por la programación y las nuevas tecnologías.  
-                    Además, soy fundador de <strong>EscoWare</strong>, un emprendimiento especializado en la reparación de dispositivos electrónicos, donde he desarrollado habilidades en gestión de proyectos y atención al cliente.
-                    <br>Me considero una persona <strong>proactiva</strong>, <strong>orientada a soluciones</strong> y con una fuerte capacidad para trabajar en equipo. Busco seguir creciendo en el mundo de la tecnología, aplicando mis conocimientos y aprendiendo de nuevos desafíos.
-                    <br>Mi objetivo es adquirir experiencia en el área de sistemas y continuar mi desarrollo profesional como <strong>desarrollador</strong>.
-                </p>
-            </div>
-        </section>
-
-
-<!-- Habilidades -->
-<section id="habilidades" class="seccion-clara">
-    <div class="contenedor">
-        <h2 class="seccion-titulo">Habilidades Principales</h2>
-        <div class="habilidades-grid">
-
-            <div class="habilidad-item">
-                <i class="fas fa-code"></i>
-                <h3>Desarrollo Backend</h3>
-                <p>Java, Node.js, Express, C# (.Net)</p>
-            </div>
-
-            <div class="habilidad-item">
-                <i class="fas fa-desktop"></i>
-                <h3>Desarrollo Frontend</h3>
-                <p>HTML, CSS, JavaScript, Bootstrap</p>
-            </div>
-
-            <div class="habilidad-item">
-                <i class="fas fa-database"></i>
-                <h3>Bases de Datos</h3>
-                <p>MySQL, SQLServer, SQLite</p>
-            </div>
-
-            <div class="habilidad-item">
-                <i class="fas fa-project-diagram"></i>
-                <h3>Gestión de proyectos</h3>
-                <p>Captura de requisitos, analisis, diseño, implementacion y testing</p>
-            </div>
-
         </div>
-    </div>
-</section>
+    </nav>
 
+    <!-- Seccion Hero -->
+    <section id="inicio" class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen-desarrollador" src="assets/img/perfil/jonyimg2.jpg" alt="Foto de Jony Escobar" />
+            <h1>Hola, soy Jony Escobar</h1>
+            <h2>Técnico en Desarrollo de Software</h2>
+            <p class="hero-texto">
+                Experiencia en el desarrollo de aplicaciones web, mobile y desktop.
+            </p>
+            <div class="hero-botones">
+                <a href="#contacto" class="btn btn-outline-light"><i class="fas fa-paper-plane"></i> Contactar</a>
+                <a href="assets/cv/CV-EscobarJonathanNicolas.pdf" class="btn btn-outline-light" download><i
+                        class="fas fa-file-alt"></i> Descargar CV</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Proyectos Destacados -->
-        <section id="proyectos" class="seccion-oscura">
-            <div class="contenedor">
-                <h2 class="seccion-titulo">Proyectos Destacados</h2>
-                <div class="proyectos-container">
-                    <button class="proyectos-nav-btn prev-btn" aria-label="Proyectos anteriores">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="proyectos-grid">
-                        <div class="proyecto-item">
-                            <div class="proyecto-imagen">
-                                <img src="assets/img/proyectos/agendaMédica.png" alt="Proyecto 1">
-                                <div class="proyecto-overlay">
-                                    <div class="proyecto-enlaces">
-                                        <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/mxeOGbFtKmE">
-                                            <i class="fas fa-external-link-alt"></i> Ver Demo
-                                        </a>
-                                        <a href="https://github.com/Jony-Escobar/ProyectoIntegradorLab2" target="_blank" class="btn btn-outline-light">
-                                            <i class="fab fa-github"></i> Código
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="proyecto-info">
-                                <h3>Agenda Médica</h3>
-                                <p>Desarrollamos una plataforma que permite a los médicos gestionar sus turnos y acceder a las historias clínicas con reglas claras según el estado del turno y el usuario que consulta.</p>
-                                <div class="proyecto-tecnologias">
-                                    <span>Pug</span>
-                                    <span>CSS</span>
-                                    <span>Bootstrap 5</span>
-                                    <span>Express.js</span>
-                                    <span>MySQL</span>
-                                    <span>Bcrypt</span>
-                                    <span>JWT</span>
-                                    <span>Cookie-Parser</span>
+    <!-- Sobre Mi -->
+    <section id="sobre-mi" class="seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Sobre Mí</h2>
+            <p class="seccion-texto">
+                Soy estudiante del último año en la
+                <strong>Tecnicatura Universitaria en Desarrollo de Software</strong>,
+                con una gran pasión por la programación y las nuevas tecnologías.
+                Además, soy fundador de <strong>EscoWare</strong>, un emprendimiento
+                especializado en la reparación de dispositivos electrónicos, donde he
+                desarrollado habilidades en gestión de proyectos y atención al
+                cliente. <br />Me considero una persona <strong>proactiva</strong>,
+                <strong>orientada a soluciones</strong> y con una fuerte capacidad
+                para trabajar en equipo. Busco seguir creciendo en el mundo de la
+                tecnología, aplicando mis conocimientos y aprendiendo de nuevos
+                desafíos. <br />Mi objetivo es adquirir experiencia en el área de
+                sistemas y continuar mi desarrollo profesional como
+                <strong>desarrollador</strong>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="seccion-clara">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Habilidades Principales</h2>
+            <div class="habilidades-grid">
+                <div class="habilidad-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Desarrollo Backend</h3>
+                    <p>Java, Node.js, C# (.Net)</p>
+                </div>
+
+                <div class="habilidad-item">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Desarrollo Frontend</h3>
+                    <p>HTML, CSS, JavaScript, Bootstrap, React</p>
+                </div>
+
+                <div class="habilidad-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Bases de Datos</h3>
+                    <p>SQL y NoSQL</p>
+                </div>
+
+                <div class="habilidad-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Gestión de proyectos</h3>
+                    <p>
+                        Captura de requisitos, analisis, diseño, implementacion y testing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyectos" class="seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Proyectos Destacados</h2>
+            <div class="proyectos-container">
+                <button class="proyectos-nav-btn prev-btn" aria-label="Proyectos anteriores">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="proyectos-grid">
+                    <div class="proyecto-item">
+                        <div class="proyecto-imagen">
+                            <img src="assets/img/proyectos/agendaMédica.png" alt="Proyecto 1" />
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-enlaces">
+                                    <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal"
+                                        data-bs-target="#videoModal"
+                                        data-video="https://www.youtube.com/embed/mxeOGbFtKmE">
+                                        <i class="fas fa-external-link-alt"></i> Ver Demo
+                                    </a>
+                                    <a href="https://github.com/Jony-Escobar/ProyectoIntegradorLab2" target="_blank"
+                                        class="btn btn-outline-light">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="proyecto-item">
-                            <div class="proyecto-imagen">
-                                <img src="assets/img/proyectos/fakeStoreApi.png" alt="Proyecto 2">
-                                <div class="proyecto-overlay">
-                                    <div class="proyecto-enlaces">
-                                        <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/YJhA3brt0DI">
-                                            <i class="fas fa-external-link-alt"></i> Ver Demo
-                                        </a>
-                                        <a href="https://github.com/Jony-Escobar/E-commerce-ULP-JonyEscobar" target="_blank" class="btn btn-outline-light">
-                                            <i class="fab fa-github"></i> Código
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="proyecto-info">
+                            <h3>Agenda Médica</h3>
+                            <p>
+                                Desarrollamos una web app que permite a los médicos
+                                gestionar sus turnos y acceder a las historias clínicas con
+                                reglas claras según el estado del turno y el usuario que
+                                consulta.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span>Pug</span>
+                                <span>Bootstrap 5</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MySQL</span>
+                                <span>Autenticación con tokens (JWT)</span>
+                                <span>Encriptación y hash de contraseñas (bcrypt)</span>
+                                <span>Creación de APIs REST</span>
                             </div>
-                            <div class="proyecto-info">
-                                <h3>E-commerce</h3>
-                                <p>Desarrollé una aplicación e-commerce responsive como proyecto integrador de la ULP, conectando frontend y backend con traducción automática y gestión de ofertas.</p>
-                                <div class="proyecto-tecnologias">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Bootstrap</span>
-                                    <span>Node.js</span>                                    
-                                    <span>MySQL</span>                                
+                        </div>
+                    </div>
+                    <div class="proyecto-item">
+                        <div class="proyecto-imagen">
+                            <img src="assets/img/proyectos/fakeStoreApi.png" alt="Proyecto 2" />
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-enlaces">
+                                    <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal"
+                                        data-bs-target="#videoModal"
+                                        data-video="https://www.youtube.com/embed/YJhA3brt0DI">
+                                        <i class="fas fa-external-link-alt"></i> Ver Demo
+                                    </a>
+                                    <a href="https://github.com/Jony-Escobar/E-commerce-ULP-JonyEscobar" target="_blank"
+                                        class="btn btn-outline-light">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="proyecto-item">
-                            <div class="proyecto-imagen">
-                                <img src="assets/img/proyectos/proyectoJava.png" alt="Proyecto 3">
-                                <div class="proyecto-overlay">
-                                    <div class="proyecto-enlaces">
-                                        <!-- <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="">
+                        <div class="proyecto-info">
+                            <h3>E-commerce</h3>
+                            <p>
+                                Desarrollé una aplicación e-commerce responsive como proyecto
+                                integrador de la ULP, conectando frontend y backend con
+                                traducción automática y gestión de ofertas.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span>Pug</span>
+                                <span>Bootstrap</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MySQL</span>
+                                <span>Consumo de APIs REST (Fake Store API)</span>
+                                <span>Traducción con API de Google Translate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-item">
+                        <div class="proyecto-imagen">
+                            <img src="assets/img/proyectos/proyectoJava.png" alt="Proyecto 3" />
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-enlaces">
+                                    <!-- <a href="#" class="btn btn-outline-light video-demo" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="">
                                             <i class="fas fa-external-link-alt"></i> Ver Demo
                                         </a> -->
-                                        <a href="https://github.com/Jony-Escobar/Trabajo-Final" target="_blank" class="btn btn-outline-light">
-                                            <i class="fab fa-github"></i> Código
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="proyecto-info">
-                                <h3>Gestión de tareas</h3>
-                                <p>Desarrollamos en equipo una aplicación de gestión de tareas como proyecto final de Laboratorio I en la ULP, utilizando Java, Swing y MySQL.</p>
-                                <div class="proyecto-tecnologias">
-                                    <span>Java</span>
-                                    <span>Swing</span>
-                                    <span>MySQL</span>
-                                    <span>JDBC</span>
-                                    <span>NetBeans</span>
+                                    <a href="https://github.com/Jony-Escobar/Trabajo-Final" target="_blank"
+                                        class="btn btn-outline-light">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <button class="proyectos-nav-btn next-btn" aria-label="Siguientes proyectos">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experiencia -->
-        <section id="experiencia" class="seccion-clara">
-            <div class="contenedor">
-                <h2 class="seccion-titulo">Experiencia Profesional</h2>
-                <div class="experiencia-timeline">
-                    <div class="experiencia-item">
-                        <div class="experiencia-content">
-                            <h3>EscoWare</h3>
-                            <p class="fecha">2020 - Presente</p>
-                            <p>Emprendedor - Servicio técnico especializado</p>
-                            <ul class="experiencia-lista">
-                                <li>Reparación de dispositivos electrónicos</li>
-                                <li>Gestión de negocio propio</li>
-                                <li>Atención al cliente y ventas</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experiencia-item">
-                        <div class="experiencia-content">
-                            <h3>Autopista de la Información</h3>
-                            <p class="fecha">2023 - 2024</p>
-                            <p>Help Desk Operator & Técnico electrónico</p>
-                            <ul class="experiencia-lista">
-                                <li>Soporte técnico de primer nivel</li>
-                                <li>Atención al cliente</li>
-                                <li>Mantenimiento de equipos electrónicos</li>
-                            </ul>
+                        <div class="proyecto-info">
+                            <h3>Gestión de tareas</h3>
+                            <p>
+                                Desarrollamos en equipo una aplicación de gestión de tareas
+                                como proyecto final de Laboratorio I en la ULP, utilizando
+                                Java, Swing y MySQL.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span>Java</span>
+                                <span>Swing</span>
+                                <span>MySQL</span>
+                                <span>JDBC</span>
+                                <span>NetBeans</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <button class="proyectos-nav-btn next-btn" aria-label="Siguientes proyectos">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Educación -->
-        <section id="educacion" class="seccion-oscura">
-            <div class="contenedor">
-                <h2 class="seccion-titulo">Educación</h2>
-                <div class="educacion-grid">
-                    <div class="educacion-item text-center">
-                        <h3>Universidad de la Punta</h3>
-                        <p class="fecha">2023 - 2026</p>
-                        <p>Tecnicatura en Desarrollo de Software</p>
+    <!-- Experiencia -->
+    <section id="experiencia" class="seccion-clara">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Experiencia Profesional</h2>
+            <div class="experiencia-timeline">
+                <div class="experiencia-item">
+                    <div class="experiencia-content">
+                        <h3>EscoWare</h3>
+                        <p class="fecha">2020 - Presente</p>
+                        <p>Emprendedor - Servicio técnico especializado</p>
+                        <ul class="experiencia-lista">
+                            <li>Reparación de dispositivos electrónicos</li>
+                            <li>Gestión de negocio propio</li>
+                            <li>Atención al cliente y ventas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experiencia-item">
+                    <div class="experiencia-content">
+                        <h3>Autopista de la Información</h3>
+                        <p class="fecha">2023 - 2024</p>
+                        <p>Help Desk Operator & Técnico electrónico</p>
+                        <ul class="experiencia-lista">
+                            <li>Soporte técnico de primer nivel</li>
+                            <li>Atención al cliente</li>
+                            <li>Mantenimiento de equipos electrónicos</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Certificaciones -->
-        <section id="certificaciones" class="seccion-clara">
-            <div class="contenedor">
-                <h2 class="seccion-titulo">Certificaciones y Cursos</h2>
+    <!-- Educación -->
+    <section id="educacion" class="seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Educación</h2>
+            <div class="educacion-grid">
+                <div class="educacion-item text-center">
+                    <h3>Universidad de la Punta</h3>
+                    <p class="fecha">2023 - 2026</p>
+                    <p>Tecnicatura Universitaria en Desarrollo de Software</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section id="certificaciones" class="seccion-clara">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Certificaciones y Cursos</h2>
+            <div class="certificaciones-container">
+                <button class="certificaciones-nav-btn prev-btn" aria-label="Certificaciones anteriores">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
                 <div class="certificaciones-grid">
+                    <div class="certificacion-item">
+                        <div class="certificacion-icono">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Node.js - Bootcamp Desarrollo Web inc. MVC y REST APIs</h3>
+                        <p class="fecha">2025</p>
+                        <div class="certificacion-contenido">
+                            <p>
+                                · Node.js <br />
+                                · React.js <br />
+                                · APIs REST <br />
+                                · Modelo-Vista-Controlador (MVC) <br />
+                                · Autenticación <br />
+                                · ORMs <br />
+                            </p>
+                        </div>
+                        <div class="certificacion-footer">
+                            <a href="assets/img/certificados/certificadoUdemyNodeJs.jpg" class="btn btn-outline-dark"
+                                target="_blank">Ver Certificado</a>
+                        </div>
+                    </div>
                     <div class="certificacion-item">
                         <div class="certificacion-icono">
                             <i class="fas fa-database"></i>
                         </div>
-                        <h3>SQL Interactivo</h3>
+                        <h3>SQL Interactivo</h3><br><br>
                         <p class="fecha">2024</p>
-                        <p>
-                            · Administración de bases de datos <br>
-                            · Joins y Combinaciones de Tablas <br>
-                            · Subconsultas y Consultas Anidadas <br>
-                            · Manipulación de Datos (CRUD) <br>
-                            · Normalización de Bases de Datos <br>
-                        </p>
-                        <a href="assets/img/certificados/CertificadoSQLJonyEscobar.png" class="btn btn-outline-dark" target="_blank">Ver Certificado</a>
+                        <div class="certificacion-contenido">
+                            <p>
+                                · Administración de bases de datos <br />
+                                · Joins y Combinaciones de Tablas <br />
+                                · Subconsultas y Consultas Anidadas <br />
+                                · Manipulación de Datos (CRUD) <br />
+                                · Normalización de Bases de Datos <br />
+                            </p>
+                        </div>
+                        <div class="certificacion-footer">
+                            <a href="assets/img/certificados/CertificadoSQLJonyEscobar.png" class="btn btn-outline-dark"
+                                target="_blank">Ver Certificado</a>
+                        </div>
                     </div>
                     <div class="certificacion-item">
                         <div class="certificacion-icono">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3>Programación con Java</h3>
+                        <h3>Programación con Java</h3><br><br>
                         <p class="fecha">2023</p>
-                        <p>
-                            · Sintaxis y estructuras fundamentales en Java <br>
-                            · Manejo de arrays y colecciones <br>
-                            · Desarrollo de algoritmos en Java <br>
-                            · Uso de entornos de desarrollo (IDE) <br>
-                        </p>
-                        <a href="assets/img/certificados/Certificado Egg_ULP Java.pdf" class="btn btn-outline-dark" target="_blank">Ver Certificado</a>
+                        <div class="certificacion-contenido">
+                            <p>
+                                · Sintaxis y estructuras fundamentales en Java <br />
+                                · Manejo de arrays y colecciones <br />
+                                · Desarrollo de algoritmos en Java <br />
+                                · Uso de entornos de desarrollo (IDE) <br />
+                            </p>
+                        </div>
+                        <div class="certificacion-footer">
+                            <a href="assets/img/certificados/Certificado Egg_ULP Java.pdf" class="btn btn-outline-dark"
+                                target="_blank">Ver Certificado</a>
+                        </div>
                     </div>
                     <div class="certificacion-item">
                         <div class="certificacion-icono">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3>Fundamentos de la Programación</h3>
+                        <h3>Fundamentos de la Programación</h3><br>
                         <p class="fecha">2022</p>
-                        <p>
-                            · Lógica de programación y algoritmos <br>
-                            · Estructuras de control y repetición <br>
-                            · Programación orientada a objetos <br>
-                            · Desarrollo de aplicaciones en Java <br>
-                        </p>
-                        <a href="assets/img/certificados/Certificado Egg_ULP Fundamentos.pdf" class="btn btn-outline-dark" target="_blank">Ver Certificado</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacto -->
-        <section id="contacto" class="seccion-clara">
-            <div class="contenedor">
-                <h2 class="seccion-titulo">Contacto</h2>
-                <div class="redes-sociales">
-                    <a href="mailto:jony.escobar14@gmail.com" class="btn btn-outline-light">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/jony-escobar" target="_blank" class="btn btn-outline-light">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/Jony-Escobar" target="_blank" class="btn btn-outline-light">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="contenedor">
-                <p>&copy; 2025 Jony Escobar - Todos los derechos reservados</p>
-            </div>
-        </footer>
-
-        <!-- Modal para Videos -->
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="videoModalLabel">Demo del Proyecto</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="ratio ratio-16x9">
-                            <iframe id="videoFrame" src="" title="Video demostrativo" allowfullscreen></iframe>
+                        <div class="certificacion-contenido">
+                            <p>
+                                · Lógica de programación y algoritmos <br />
+                                · Estructuras de control y repetición <br />
+                                · Programación orientada a objetos <br />
+                                · Desarrollo de aplicaciones en Java <br />
+                            </p>
                         </div>
+                        <div class="certificacion-footer">
+                            <a href="assets/img/certificados/Certificado Egg_ULP Fundamentos.pdf"
+                                class="btn btn-outline-dark" target="_blank">Ver Certificado</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="certificaciones-nav-btn next-btn" aria-label="Siguientes certificaciones">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Contacto</h2>
+            <div class="redes-sociales">
+                <a href="mailto:jony.escobar14@gmail.com" class="btn btn-outline-light">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/jony-escobar" target="_blank" class="btn btn-outline-light">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Jony-Escobar" target="_blank" class="btn btn-outline-light">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p>&copy; 2025 Jony Escobar</p>
+        </div>
+    </footer>
+
+    <!-- Modal para Videos -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Demo del Proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" title="Video demostrativo" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- JS Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- JS Proyectos -->
-        <script src="assets/js/proyectos.js"></script>
-    </body>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Proyectos -->
+    <script src="assets/js/proyectos.js"></script>
+    <script src="assets/js/certificaciones.js"></script>
+</body>
+
 </html>

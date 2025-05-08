@@ -1,32 +1,109 @@
-/* Certificaciones */
-.certificaciones-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 2rem 0;
+/* Estilos para la sección de Certificaciones y Cursos */
+
+/* Contenedor principal de certificaciones */
+.certificaciones-container {
+    position: relative; /* Permite posicionar los botones de navegación de forma absoluta */
+    width: 100%;
+    padding: 0 3rem; /* Espacio para los botones de navegación */
+    overflow: visible; /* Permite que los botones de navegación sean visibles fuera del contenedor */
 }
 
+/* Grid de certificaciones - Carrusel horizontal */
+.certificaciones-grid {
+    display: flex; /* Cambia de grid a flex para permitir scroll horizontal */
+    gap: 2rem; /* Espacio entre las tarjetas */
+    margin-top: 2rem;
+    overflow-x: auto; /* Permite scroll horizontal */
+    scroll-behavior: smooth; /* Hace el scroll suave */
+    padding: 1.5rem 1rem;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    /* Ocultar scrollbar en diferentes navegadores */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Ocultar scrollbar en Chrome, Safari y Opera */
+.certificaciones-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos para cada tarjeta de certificación */
 .certificacion-item {
-    background-color: var(--primary-color);
-    border-radius: 1rem;
+    flex: 0 0 350px; /* Ancho fijo de 350px, no crece ni se encoge */
+    min-width: 350px; /* Evita que la tarjeta se comprima */
+    background-color: rgba(17, 34, 64, 0.5);
+    border-radius: 12px;
     padding: 2rem;
     text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(100, 255, 218, 0.1);
     transition: all 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Efecto hover en las tarjetas */
 .certificacion-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.03);
     box-shadow: var(--shadow-hover);
     border-color: rgba(100, 255, 218, 0.2);
+    z-index: 10; /* Asegura que la tarjeta hover esté por encima de las demás */
 }
 
+/* Contenedor del contenido principal */
+.certificacion-contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor del botón */
+.certificacion-footer {
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+/* Botones de navegación del carrusel */
+.certificaciones-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(17, 34, 64, 0.8);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 20; /* Asegura que los botones estén por encima de las tarjetas */
+}
+
+/* Efecto hover en los botones de navegación */
+.certificaciones-nav-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Posicionamiento de los botones de navegación */
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Estilos para el ícono de cada certificación */
 .certificacion-icono {
     width: 80px;
     height: 80px;
-    background-color: var(--secondary-color);
+    background-color: rgba(100, 255, 218, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -34,38 +111,91 @@
     margin: 0 auto 1.5rem;
 }
 
+/* Estilos para el ícono dentro del círculo */
 .certificacion-icono i {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
+/* Estilos para el título de la certificación */
 .certificacion-item h3 {
     color: var(--text-primary);
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
+/* Estilos para la fecha de la certificación */
 .certificacion-item .fecha {
     color: var(--secondary-color);
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
+/* Estilos para el contenido de la certificación */
 .certificacion-item p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    text-align: left;
 }
 
-/* Los estilos de botones ahora están en buttons.css */
+/* Estilos para las tecnologías de cada certificación */
+.certificacion-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
 
+/* Estilos para cada etiqueta de tecnología */
+.certificacion-tecnologias span {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--secondary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Estilos para el botón de ver certificado */
+.certificacion-footer .btn-outline-dark {
+    display: inline-block;
+    min-width: 150px;
+    margin-top: 0.5rem;
+    background-color: rgba(10, 25, 47, 0.5);
+    border: 1px solid var(--secondary-color);
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.certificacion-footer .btn-outline-dark:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+
+/* Estilos responsive para pantallas pequeñas */
 @media screen and (max-width: 768px) {
-    .certificaciones-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .certificaciones-container {
+        padding: 0 2rem; /* Reduce el padding en móviles */
+    }
+
+    .certificaciones-nav-btn {
+        width: 35px; /* Botones más pequeños en móviles */
+        height: 35px;
+    }
+
+    .certificacion-item {
+        flex: 0 0 300px; /* Tarjetas más pequeñas en móviles */
+        min-width: 300px;
+        padding: 1.5rem;
     }
     
-    .certificacion-item {
-        padding: 1.5rem;
+    .certificacion-item:hover {
+        transform: translateY(-5px) scale(1.02); /* Efecto hover más sutil en móviles */
     }
 } 

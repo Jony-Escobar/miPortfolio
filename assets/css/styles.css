@@ -500,13 +500,6 @@ h2 {
 }
 
 /* Certificaciones */
-.certificaciones-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 2rem 0;
-}
-
 .certificacion-item {
     background-color: var(--primary-color);
     border-radius: 1rem;
@@ -621,14 +614,5 @@ h2 {
     .proyecto-enlaces .btn {
         width: 100%;
         max-width: 200px;
-    }
-
-    .certificaciones-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .certificacion-item {
-        padding: 1.5rem;
     }
 }
